@@ -1,0 +1,154 @@
+﻿@using BitBookWebApplication.Models
+
+@{
+    Layout = null;
+    int signupID = ViewBag.SignupID;
+    List<Notification> notifications = ViewBag.NotificationList;
+    string Name = ViewBag.Name;
+    Photo photo = ViewBag.Photo;
+    List<CommentDetail> commentDetailList = ViewBag.CommentList;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Comment Photo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="~/css/bitProfile.css" rel="stylesheet" />
+</head>
+<body>
+<div>
+    <div>
+        <div class="header1">
+            <div id="brandLogo" class="header1">
+                <a href="@Url.Action("HomePage", "Home", new {authenticationInfo = signupID})"><img src="/Images/bitbookLogo.gif" class="brandLogosize"/></a>
+            </div>
+            <div id="searchboxstyle" class="header1">
+                <form method="post" id="SearchForm">
+                    <div class="navbar-collapse collapse" style="">
+                        <ul class="nav navbar-nav">
+                            <li><input type="text" placeholder="Search Here..." style="background-color: rosybrown; color: blue" id="SearchDetail" name="SearchDetail"/></li>
+                            <li><button class="btn" id="Search" name="action:SearchPage" style="height: 26px; border-radius: 10px; background-color: green">Search</button></li>
+                        </ul>
+                    </div>
+                </form>
+
+            </div>
+
+            <div id="profilepicsmall" class="header1">
+                <img src="/Images/profilepicsmall.png" class="profilepicsmallsize"/>
+
+                <div class="dropdown">
+                    <button class="dropbtn">@Name</button>
+                    <div class="dropdown-content">
+                        <a href="@Url.Action("ProfileView", "Profile", new { personID = signupID })">View Profile</a>
+                        <a href="@Url.Action("EditView", "Edit", new {signupIds = signupID})">Edit Profile</a>
+                        <a href="@Url.Action("SignUpView", "SignUp")">Logout</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="message" class="header1">
+            <a href="@Url.Action("FriendListView", "Home", new {userID = signupID})"><img src="/Images/frn.png" height="30"/></a>
+        </div>
+        <div id="notification" class="header1">
+            <div class="dropdown">
+                <button><img src="/Images/noti.png" height="30"/></button>
+                <div class="dropdown-content">
+                    @if (ViewBag.NotificationList != null)
+                    {
+                        foreach (Notification notification in notifications)
+                        {
+                            @Html.ActionLink(@notification.NotificationString, "DecideRedirectPost", "Home", new {postType = notification.Type, id = notification.TypeId}, null)
+                        }
+                    }
+                </div>
+            </div>
+
+
+        </div>
+        <div id="profilearea2" class="header1">|</div>
+        <div id="setting" class="header1">
+            <a href="@Url.Action("EditView", "Edit", new {signupIds = signupID})"><img src="/Images/set.png" height="30"/></a>
+        </div>
+        <div id="logout" class="header1">
+            <a href="@Url.Action("SignUpView", "SignUp")"><img src="/Images/lo.png" height="30"/></a>
+        </div>
+    </div>
+    <div class="container">
+        <br />
+        @if (ViewBag.Message != null)
+        {
+
+            <h3 class='alert alert-success'>@ViewBag.Message</h3>
+        }
+        <br />
+        <div>
+            <form method="POST" id="commentForm">
+                <input type="hidden" id="PostID" name="PostID" value=@photo.ID>
+                <input type="hidden" id="TypeNo" name="TypeNo" value=@photo.TypeNo>
+                <input type="hidden" id="PersonID" name="PersonID" value=@ViewBag.SignUpID>
+                <br/>
+                <br/>
+                <h1>Profile Photo Of     @photo.Name</h1>
+                <table class="col-lg-7">
+                    <tr>
+                        <td>@Html.ActionLink(photo.Name, "ProfileView", "Profile", new { personID = photo.SignupID }, new { @style = "color:#000aaa;" })</td>
+                        <td></td>
+                        <td>@photo.NoOfLike</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            @if (photo.PhotoInByte != null)
+                            {
+                                string profileImage = photo.PhotoInString;
+                                <img style="max-width: 600px; height: 450px;" src="@String.Format("data:image.png;base64,{0}", profileImage)" alt="ProfileImage" />
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>.</label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><textarea id="Comment" name="Comment" rows="3" cols="30"></textarea></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn" id="Submit" name="action:CommentPhoto" style="height: 26px; border-radius: 10px; background-color: green">Comment</button></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <br />
+        <div>
+            @if (commentDetailList != null)
+            {
+                <table class="col-lg-7">
+                    @foreach (CommentDetail comment in commentDetailList)
+                    {
+                        <tr>
+                            <td>@Html.ActionLink(comment.PersonName.ToString(), "ProfileView", "Profile", new { personID = comment.PersonID }, new { @style = "color:#000aaa;" })</td>
+                            <td>@comment.Comment</td>
+                        </tr>
+
+                    }
+                </table>
+            }
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

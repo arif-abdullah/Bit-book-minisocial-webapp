@@ -1,0 +1,220 @@
+﻿@using System.Drawing
+@using BitBookWebApplication.Models
+@{
+    Layout = null;
+    string name = ViewBag.Name;
+    int signupId = ViewBag.SignupID;
+    Photo photo = ViewBag.UserPhoto;
+    List<AllAboutPost> postInfos = ViewBag.PostList;
+    List<Notification> notifications = ViewBag.NotificationList;
+    Person personInfo = ViewBag.PersonInfo;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HomePage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="~/css/bitProfile.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .container-box {
+            background-color: gray;
+            width: 100%;
+        }
+
+        .left-side {
+            float: left;
+            width: 30%;
+        }
+
+        .mid-side {
+            float: left;
+            width: 35%;
+            color: blue;
+        }
+        .right-side {
+            float: left;
+            width: 25%;
+            color: blue;
+        }
+        .body-left {
+            display: block;
+            float: left;
+            width: 15%;
+            min-height: 740px;
+            background-color: aliceblue;
+        }
+
+        .body-right {
+            float: left;
+            width: 85%;
+            min-height: 740px;
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="header1">
+        <div id="brandLogo" class="header1">
+            <a href="@Url.Action("HomePage", "Home", new {authenticationInfo = signupId})"><img src="/Images/bitbookLogo.gif" class="brandLogosize" /></a>
+        </div>
+        <div id="searchboxstyle" class="header1">
+            <form method="post" id="SearchForm">
+                <div class="navbar-collapse collapse" style="">
+                    <ul class="nav navbar-nav">
+                        <li><input type="text" placeholder="Search Here..." style="background-color: rosybrown; color: blue" id="SearchDetail" name="SearchDetail" /></li>
+                        <li><button class="btn" id="Search" name="action:SearchPage" style="height: 26px; border-radius: 10px; background-color: green">Search</button></li>
+                    </ul>
+                </div>
+            </form>
+
+        </div>
+
+        <div id="profilepicsmall" class="header1">
+            <img src="/Images/profilepicsmall.png" class="profilepicsmallsize" />
+
+            <div class="dropdown">
+                <button class="dropbtn">@name</button>
+                <div class="dropdown-content">
+                    <a href="@Url.Action("ProfileView", "Profile", new { personID = signupId })">View Profile</a>
+                    <a href="@Url.Action("EditView", "Edit", new {signupIds = signupId})">Edit Profile</a>
+                    <a href="@Url.Action("SignUpView", "SignUp")">Logout</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="message" class="header1">
+        <a href="@Url.Action("FriendListView", "Home", new {userID = signupId})"><img src="/Images/frn.png" height="30" /></a>
+    </div>
+    <div id="notification" class="header1">
+        <div class="dropdown">
+            <button><img src="/Images/noti.png" height="30" /></button>
+            <div class="dropdown-content">
+                @if (ViewBag.NotificationList != null)
+                {
+                    foreach (Notification notification in notifications)
+                    {
+                        @Html.ActionLink(@notification.NotificationString, "DecideRedirectPost", "Home", new { postType = notification.Type, id = notification.TypeId }, null)
+                    }
+                }
+            </div>
+        </div>
+
+
+    </div>
+    <div id="profilearea2" class="header1">|</div>
+    <div id="setting" class="header1">
+        <a href="@Url.Action("EditView", "Edit", new {signupIds = signupId})"><img src="/Images/set.png" height="30" /></a>
+    </div>
+    <div id="logout" class="header1">
+        <a href="@Url.Action("SignUpView", "SignUp")"><img src="/Images/lo.png" height="30"/></a>
+    </div>
+
+    
+    <div class="">
+        <div class="body-left">
+            <br/>
+            <br/>
+            <div class="profile-photo-name">
+                @if (ViewBag.Image != null)
+                {
+
+                    string profileImage = ViewBag.Image;
+                    <img class="center-block" style="width: 100px; height: 100px;" src="@String.Format("data:image.png;base64,{0}", profileImage)" alt="ProfileImage"/>
+                }
+            </div>
+            <div class="profile-photo-name">
+                <label style="text-align: center; vertical-align: middle;">@personInfo.Name</label>
+                <br/>
+                <label style="text-align: center; vertical-align: middle;">@personInfo.Email</label>
+                <br/>
+                <label style="text-align: center; vertical-align: middle;">@personInfo.MobileNo</label>
+            </div>
+        </div>
+        <div class="container body-right">
+            <br />
+            @if (ViewBag.Message != null)
+            {
+
+                <h3 class='alert alert-success'>@ViewBag.Message</h3>
+            }
+            <br />
+           @using (Html.BeginForm("HomePage", "Home", FormMethod.Post, new {enctype = "multipart/form-data"}))
+           {
+               <input type="hidden" id="SignUpID" name="SignUpID" value=@ViewBag.SignupID>               
+               <input type="hidden" id="Passowrd" name="Passowrd" value=@ViewBag.Password>
+               <input type="hidden" id="Name" name="Name" value=@ViewBag.Name>
+               <div><label for="PostDetail" style="font-size: 30px;">Write Post</label>
+               </div>
+               <div><textarea id="PostDetail" name="PostDetail" rows="4" cols="200"></textarea>
+               </div>
+               <div style="float: left; width: 20%">
+                   <input type="file" id="PostPhoto" name="PostPhoto" style="width: 100%;"/>
+               </div>
+               <div style="float: left; width: 80%">
+                   <button id="Post" name="action:HomePage" type="submit" style="width: 30%; text-align: center; background-color: goldenrod">Post</button>
+               </div>
+           }
+            <br/><br /><br />
+            <div style="width: 100%; min-height: 10px; float: left"></div>
+                <div style="width: 100%; min-height: 5px; background-color: blue; float: left"></div>
+                <div style="width: 100%; min-height: 10px; float: left"></div>
+                @if (ViewBag.PostList != null)
+                {
+                    foreach (AllAboutPost allAboutPost in postInfos)
+                    {
+                        <div>
+                            <div style="width: 100%; float: left">
+                                <div style="float: left;">
+                                    @if (allAboutPost.ProfilePhotoInString != null)
+                                    {
+                                        string profileImage = allAboutPost.ProfilePhotoInString;
+                                        <img style="width: 30px; height: 30px;" src="@String.Format("data:image.png;base64,{0}", profileImage)" alt="ProfileImage"/>
+                                    }
+                                </div>
+                                <div style="float: left; width: 70%">@Html.ActionLink(@allAboutPost.Name.ToString(), "ProfileView", "Profile", new { personID = allAboutPost.SignUpID }, null)</div>
+
+                                <div style="float: left; width: 20%">
+                                    @if (signupId == allAboutPost.SignUpID)
+                                    {
+                                        @Html.ActionLink("Delete", "DeletePost", "Home", new { userPostId = allAboutPost.Id }, null)
+                                    }
+                                </div>
+                            </div>
+                            <div style="display: block;"></div>
+                            <div style="width: 100%; min-height: 50px; float: left">
+                                <div style="width: 80%; min-height: 100px; background-color: burlywood; float: left;">@Html.Label(allAboutPost.PostDetail, new {@cols = "80", @rows = "4"})</div>
+                                <div style="width: 20%; min-height: 100px;  float: left;">
+                                    @if (allAboutPost.PostPhotoInString != null)
+                                    {
+                                        string profileImage = allAboutPost.PostPhotoInString;
+                                        <img style="width: 100%; height: 200px;" src="@String.Format("data:image.png;base64,{0}", profileImage)" alt="ProfileImage"/>
+                                    }
+                                </div>
+                            </div>
+                            <div style="float: left; width: 5%">@Html.ActionLink(@allAboutPost.NoOfLike.ToString(), "ShowWhoLiked", "Home", new {id = allAboutPost.Id}, null)</div>
+                            <div style="float: left; width: 65%">@Html.ActionLink("Like", "DoLike", "Home", new {id = allAboutPost.Id}, null)</div>
+                            <div style="float: left; width: 30%">@Html.ActionLink("Comment", "Comment", "Home", new {id = allAboutPost.Id}, null)</div>
+                        </div>
+                        <div style="width: 100%; min-height: 10px; float: left"></div>
+                        <div style="width: 100%; min-height: 5px; background-color: blue; float: left"></div>
+                        <div style="width: 100%; min-height: 10px; float: left"></div>
+                    }
+                }
+        </div>
+    </div>
+</div>
+</body>
+</html>

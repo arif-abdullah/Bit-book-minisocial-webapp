@@ -1,0 +1,222 @@
+﻿@using BitBookWebApplication.Models
+@model BitBookWebApplication.Models.AllPersonalInformation
+@{
+    Layout = null;
+    int signupID = ViewBag.SignupID;
+    string Name = ViewBag.Name;
+    List<Notification> notifications = ViewBag.NotificationList;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditView</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="~/css/bitProfile.css" rel="stylesheet" />
+    <style>
+        .field-validation-error {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div>
+        <div class="header1">
+            <div id="brandLogo" class="header1">
+                <a href="@Url.Action("HomePage", "Home", new {authenticationInfo = signupID})"><img src="/Images/bitbookLogo.gif" class="brandLogosize" /></a>
+            </div>
+            <div id="searchboxstyle" class="header1">
+                <form method="post" id="SearchForm">
+                    <div class="navbar-collapse collapse" style="">
+                        <ul class="nav navbar-nav">
+                            <li><input type="text" placeholder="Search Here..." style="background-color: rosybrown; color: blue" id="SearchDetail" name="SearchDetail" /></li>
+                            <li><button class="btn" id="Search" name="action:SearchPage" style="height: 26px; border-radius: 10px; background-color: green">Search</button></li>
+                        </ul>
+                    </div>
+                </form>
+
+            </div>
+
+            <div id="profilepicsmall" class="header1">
+                <img src="/Images/profilepicsmall.png" class="profilepicsmallsize" />
+
+                <div class="dropdown">
+                    <button class="dropbtn">@Name</button>
+                    <div class="dropdown-content">
+                        <a href="@Url.Action("EditView", "Edit", new {signupIds = signupID})">Edit Profile</a>
+                        <a href="@Url.Action("SignUpView", "SignUp")">Logout</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="message" class="header1">
+            <a href="@Url.Action("FriendListView", "Home", new {userID = signupID})"><img src="/Images/frn.png" height="30" /></a>
+        </div>
+        <div id="notification" class="header1">
+            <div class="dropdown">
+                <button><img src="/Images/noti.png" height="30" /></button>
+                <div class="dropdown-content">
+                    @if (ViewBag.NotificationList != null)
+                    {
+                        foreach (Notification notification in notifications)
+                        {
+                            @Html.ActionLink(@notification.NotificationString, "DecideRedirectPost", "Home", new { postType = notification.Type, id = notification.TypeId }, null)
+                        }
+                    }
+                </div>
+            </div>
+
+
+        </div>
+        <div id="profilearea2" class="header1">|</div>
+        <div id="setting" class="header1">
+            <a href="@Url.Action("EditView", "Edit", new {signupIds = signupID})"><img src="/Images/set.png" height="30" /></a>
+        </div>
+        <div id="logout" class="header1">
+            <a href="@Url.Action("SignUpView", "SignUp")"><img src="/Images/lo.png" height="30" /></a>
+        </div>
+    </div>
+
+    <div>
+        <br/>
+        <br />
+        <br />
+
+        @using (Html.BeginForm("EditView", "Edit", FormMethod.Post, new {enctype = "multipart/form-data"}))
+        {
+            <br/>
+            if (ViewBag.ErrorMessage != null)
+            {
+
+                <h3 class='alert alert-danger'>@ViewBag.ErrorMessage</h3>
+            }
+            if (ViewBag.SuccesMessage != null)
+            {
+
+                <h3 class='alert alert-success'>@ViewBag.SuccesMessage</h3>
+            }
+            <br/>
+            <label style="font-size: 25px">Edit Personal information</label>
+            @Html.HiddenFor(c => c.SignupID)
+            @Html.HiddenFor(c => c.AdditionalInfoID)
+            @Html.HiddenFor(c => c.Password)
+            @Html.HiddenFor(c => c.ProfilePhotoId)
+            @Html.HiddenFor(c => c.CoverPhotoId)
+
+            <br/>
+            <br/>
+            <table>
+                <tr>
+                    <td><label for="ProfilePhoto">Profile Photo</label></td>
+                    <td><input type="file" id="ProfilePhoto" name="ProfilePhoto" style="width: 100%;"/></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="CoverPhoto">CoverPhoto</label></td>
+                    <td><input type="file" id="CoverPhoto" name="CoverPhoto" style="width: 100%;"/></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.Name)</td>
+                    <td>@Html.TextBoxFor(c => c.Name)</td>
+                    <td>@Html.ValidationMessageFor(c => c.Name)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.NewPassword)</td>
+                    <td>@Html.PasswordFor(c => c.NewPassword)</td>
+                    <td>@Html.ValidationMessageFor(c => c.NewPassword)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.ConfirmPassword)</td>
+                    <td>@Html.PasswordFor(c => c.ConfirmPassword)</td>
+                    <td>@Html.ValidationMessageFor(c => c.ConfirmPassword)</td>
+                </tr>
+
+                <tr>
+                    <td>@Html.LabelFor(c => c.Gender)</td>
+                    <td>
+                        @Html.RadioButtonFor(c => c.Gender, "1") Male
+                        @Html.RadioButtonFor(c => c.Gender, "2") Female
+                    </td>
+                    <td>@Html.ValidationMessageFor(c => c.Gender)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.AboutMe)</td>
+                    <td>@Html.TextAreaFor(c => c.AboutMe)</td>
+                    <td>@Html.ValidationMessageFor(c => c.AboutMe)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.AreaOfInterest)</td>
+                    <td>@Html.TextAreaFor(c => c.AreaOfInterest)</td>
+                    <td>@Html.ValidationMessageFor(c => c.AreaOfInterest)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.MobileNumber)</td>
+                    <td>@Html.TextBoxFor(c => c.MobileNumber)</td>
+                    <td>@Html.ValidationMessageFor(c => c.MobileNumber)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.Religion)</td>
+                    <td>@Html.TextBoxFor(c => c.Religion)</td>
+                    <td>@Html.ValidationMessageFor(c => c.Religion)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.Address)</td>
+                    <td>@Html.TextAreaFor(c => c.Address)</td>
+                    <td>@Html.ValidationMessageFor(c => c.Address)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.DateOfBirth)</td>
+                    <td>@Html.TextBoxFor(c => c.DateOfBirth, new {id = "pickyDate"})</td>
+                    <td>@Html.ValidationMessageFor(c => c.DateOfBirth)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.OldPassword)</td>
+                    <td>@Html.PasswordFor(c => c.OldPassword)</td>
+                    <td>@Html.ValidationMessageFor(c => c.OldPassword)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn" id="Save" name="action:EditView" style="height: 26px; border-radius: 10px; background-color: green">Save</button></td>
+                    <td></td>
+                </tr>
+            </table>
+            <br/>
+
+        }
+    </div>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/bootstrap-datepicker.js"></script>
+<script>
+    $(document)
+        .ready(function() {
+            $('#pickyDate')
+                .datepicker({
+                    format: "mm-dd-yyyy"
+                });
+        });
+</script>
+</body>
+</html>

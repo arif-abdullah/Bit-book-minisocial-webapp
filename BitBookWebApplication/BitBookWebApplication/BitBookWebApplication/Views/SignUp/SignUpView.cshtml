@@ -1,0 +1,202 @@
+﻿@using BitBookWebApplication.Models
+@model BitBookWebApplication.Models.Person
+@{
+    ViewBag.Title = "SignUpView";
+    Layout = null;
+    string message = ViewBag.Message;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - SignUpView</title>
+    <link href="~/css/bitSignup.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .container-box {
+            width: 100%;
+        }
+
+        .left-side {
+            float: left;
+            width: 600px;
+        }
+
+        .right-side {
+            float: left;
+        }
+
+        .body-left {
+            display: block;
+            float: left;
+            width: 60%;
+            min-height: 740px;
+        }
+
+        .body-right {
+            float: left;
+            width: 40%;
+            min-height: 740px;
+        }
+
+        .field-validation-error {
+            color: #ff0000;
+        }
+    </style>
+
+</head>
+<div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #1b6192;">
+    <div class="container container-box">
+        <div class="navbar-header left-side">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>s
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        
+            <label style="color: white;"><img src="/Images/bitbookLogo.gif" class="brandLogosize" /></label>
+        </div>
+        <form method="post" id="LoginForm">
+            <div class="navbar-collapse collapse right-side" style="">
+                <ul class="nav navbar-nav">
+                    <li><label for="LoginEmail" style="color: white;">Email</label></li>
+                    <li><input type="text" id="LoginEmail" name="LoginEmail" /></li>
+                    <li><label>&nbsp;&nbsp;</label></li>
+                    <li><label for="LoginPassword" style="color: white;">Password</label></li>
+                    <li><input type="password" id="LoginPassword" name="LoginPassword" /></li>
+                    <li><label>&nbsp;&nbsp;</label></li>
+                    <li><button class="btn" type="submit" id="Login" name="action:LoginPage" style="background-color: white">Login</button></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="">
+    <div class="body-left"></div>
+    <div class="container body-right">
+        <form method="post" id="CreateForm">
+            <br />
+            @if (ViewBag.Message != null)
+            {
+
+                <h3 class='alert alert-danger'>@ViewBag.Message</h3>
+            }
+            <br />
+            <label style="font-size: 25px">Create A new Account</label>
+            <br />
+            <br />
+            <br />
+            <table>
+                <tr>
+                    <td>@Html.LabelFor(c => c.Name)</td>
+                    <td>@Html.TextBoxFor(c => c.Name)</td>
+                    <td>@Html.ValidationMessageFor(c => c.Name)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.Email)</td>
+                    <td>@Html.TextBoxFor(c => c.Email)</td>
+                    <td>@Html.ValidationMessageFor(c => c.Email)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.ConfirmEmail)</td>
+                    <td>@Html.TextBoxFor(c => c.ConfirmEmail)</td>
+                    <td>@Html.ValidationMessageFor(c => c.ConfirmEmail)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.Password)</td>
+                    <td>@Html.PasswordFor(c => c.Password)</td>
+                    <td>@Html.ValidationMessageFor(c => c.Password)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.ConfirmPassword)</td>
+                    <td>@Html.PasswordFor(c => c.ConfirmPassword)</td>
+                    <td>@Html.ValidationMessageFor(c => c.ConfirmPassword)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.DateOfBirth)</td>
+                    <td>@Html.TextBoxFor(c => c.DateOfBirth, new { id = "pickyDate" })</td>
+                    <td>@Html.ValidationMessageFor(c => c.DateOfBirth)</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(c => c.Gender)</td>
+                    <td>
+                        @Html.RadioButtonFor(c => c.Gender, "1") Male
+                        @Html.RadioButtonFor(c => c.Gender, "2") Female
+                    </td>
+                    <td>@Html.ValidationMessageFor(c => c.Gender)</td>
+                </tr>
+            </table>
+            <br />
+            <label>By clicking Create Account, you agree to our Terms and confirm that you have read our Data Policy, including our Cookie Use Policy. You may receive SMS message notifications from Facebook and can opt out at any time.</label>
+            <br />
+            <br />
+            <button class="btn" type="submit" id="Create" name="action:SignUpView" style="background-color: white">Create Account</button>
+        </form>
+    </div>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/bootstrap.js"></script>
+<script src="~/Scripts/bootstrap-datepicker.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#pickyDate').datepicker({
+            format: "mm-dd-yyyy"
+        });
+    });
+    //$(document).ready(function () {
+    //    $("#CreateForm").validate({
+    //        rules: {
+
+    //            Name: "required",
+    //            Email: "required",
+    //            ConfirmEmail: {
+    //                required: true,
+    //                equalTo: "#Email"
+    //            },
+    //            Password: "required",
+    //            ConfirmPassword: {
+    //                required: true,
+    //                equalTo: "#Password"
+    //            },
+    //            DateOfBirth: "required",
+    //            Gender: "required"
+    //        },
+    //        messages: {
+    //            Name: "Please provide Name",
+    //            Email: "Please provide Email",
+    //            ConfirmEmail: {
+    //                required: "Please provide Confirm Email",
+    //                equalTo: "Confirm email must match with Email"
+    //            },
+    //            Password: "Please provide Password",
+    //            ConfirmPassword: {
+    //                required: "Please provide Confirm Password",
+    //                equalTo: "Confirm password must match with Password"
+    //            },
+    //            DateOfBirth: "Please provide Date of Birth",
+    //            Gender: "Please provide Gender"
+    //        }
+    //    });
+    //});
+
+    //$(function () {
+    //    $('.datepicker').datepicker({
+    //        format: 'mm-dd-yyyy'
+    //    });
+    //});
+</script>
+@if (TempData["msg"] != null)
+{
+
+    @Html.Raw(TempData["msg"])
+}
+</body>
+</html>
+

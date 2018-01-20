@@ -1,0 +1,186 @@
+﻿@using BitBookWebApplication.Models
+
+@{
+    Layout = null;
+    string searchName = ViewBag.SearchName;
+    string name = ViewBag.Name;
+    int signupId = ViewBag.SignupID;
+    string password = ViewBag.Password;
+    List<FriendShip> persons = ViewBag.PersonList;
+    string message = ViewBag.Message;
+    List<Notification> notifications = ViewBag.NotificationList;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Search Friend</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="~/css/bitProfile.css" rel="stylesheet" />
+    <style>
+        .container-box {
+            background-color: gray;
+            width: 100%;
+        }
+
+        .left-side {
+            float: left;
+            width: 40%;
+        }
+
+        .mid-side {
+            float: left;
+            width: 40%;
+            color: blue;
+        }
+
+        .left-side {
+            float: left;
+            width: 20%;
+            color: blue;
+        }
+
+        .body-left {
+            display: block;
+            float: left;
+            width: 15%;
+            min-height: 740px;
+            background-color: aliceblue;
+        }
+
+        .body-right {
+            float: left;
+            width: 85%;
+            min-height: 740px;
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div >
+            <div>
+                <div class="header1">
+                    <div id="brandLogo" class="header1">
+                        <a href="@Url.Action("HomePage", "Home", new {authenticationInfo = signupId})"><img src="/Images/bitbookLogo.gif" class="brandLogosize" /></a>
+                    </div>
+                    <div id="searchboxstyle" class="header1">
+                        <form method="post" id="SearchForm">
+                            <div class="navbar-collapse collapse" style="">
+                                <ul class="nav navbar-nav">
+                                    <li><input type="text" placeholder="Search Here..." style="background-color: rosybrown; color: blue" id="SearchDetail" name="SearchDetail" /></li>
+                                    <li><button class="btn" id="Search" name="action:SearchPage" style="height: 26px; border-radius: 10px; background-color: green">Search</button></li>
+                                </ul>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div id="profilepicsmall" class="header1">
+                        <img src="/Images/profilepicsmall.png" class="profilepicsmallsize" />
+
+                        <div class="dropdown">
+                            <button class="dropbtn">@name</button>
+                            <div class="dropdown-content">
+                                <a href="@Url.Action("ProfileView", "Profile", new {personID = signupId})">View Profile</a>
+                                <a href="@Url.Action("EditView", "Edit", new {signupIds = signupId})">Edit Profile</a>
+                                <a href="@Url.Action("SignUpView", "SignUp")">Logout</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="message" class="header1">
+                    <a href="@Url.Action("FriendListView", "Home", new {userID = signupId})"><img src="/Images/frn.png" height="30" /></a>
+                </div>
+                <div id="notification" class="header1">
+                    <div class="dropdown">
+                        <button><img src="/Images/noti.png" height="30" /></button>
+                        <div class="dropdown-content">
+                            @if (ViewBag.NotificationList != null)
+                            {
+                                foreach (Notification notification in notifications)
+                                {
+                                    @Html.ActionLink(@notification.NotificationString, "DecideRedirectPost", "Home", new { postType = notification.Type, id = notification.TypeId }, null)
+                                }
+                            }
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="profilearea2" class="header1">|</div>
+                <div id="setting" class="header1">
+                    <a href="@Url.Action("EditView", "Edit", new {signupIds = signupId})"><img src="/Images/set.png" height="30" /></a>
+                </div>
+                <div id="logout" class="header1">
+                    <a href="@Url.Action("SignUpView", "SignUp")"><img src="/Images/lo.png" height="30" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="body-left">
+               
+            </div>
+            <div class="container body-right">
+                <br/>
+                <br/>
+                <br/>
+                @if (ViewBag.Message != null)
+                {
+
+                    <h3 class='alert alert-success'>@ViewBag.Message</h3>
+                }
+                <br />
+                
+                @if (ViewBag.PersonList != null)
+                {
+                    int i = 0;
+                    <table class="col-lg-8">
+                        @foreach (FriendShip friendShip in persons)
+                        {
+                            i = i + 1;
+                                <tr>
+                                 
+                                <td>@Html.ActionLink(@friendShip.Name.ToString(), "ProfileView", "Profile", new { personID = friendShip.ID }, new { @style = "color:#000aaa;" })</td>
+                                <td>@friendShip.Email</td>
+                                <td>@friendShip.Status</td>
+                                @{
+                                    if (friendShip.StatusID == 0)
+                                    {
+                                        <td>@Html.ActionLink("Do Friend", "DoFriend", "Search", new { id = friendShip.ID }, new { @style = "color:#000aaa;" })</td>
+                                    }
+                                    else if (friendShip.StatusID == 2)
+                                    {
+                                        <td>@Html.ActionLink("Accept as friend", "UpdateFriend", "Search", new { id = friendShip.FriendshipID }, new { @style = "color:#000aaa;" })</td>
+                                    } 
+                                      else if (friendShip.StatusID == 1||friendShip.StatusID==3)
+                                    {
+                                        <td>@Html.ActionLink("Remove friend", "RemoveFriend", "Search", new { id = friendShip.FriendshipID }, new { @style = "color:#000aaa;" })</td>
+                                    }
+                                      else
+                                      {
+                                          <td>Some Error Happend</td>
+                                      }                      
+                                    
+                                }
+                                
+                                
+                            </tr>
+                        }
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+﻿@using BitBookWebApplication.Models
+
+@{
+    Layout = null;
+    string searchName = ViewBag.SearchName;
+    string name = ViewBag.Name;
+    int signupId = ViewBag.SignupID;
+    string password = ViewBag.Password;
+    List<Person> persons = ViewBag.PersonList;
+    string message = ViewBag.Message;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Friend List</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .container-box {
+            background-color: gray;
+            width: 100%;
+        }
+
+        .left-side {
+            float: left;
+            width: 40%;
+        }
+
+        .mid-side {
+            float: left;
+            width: 40%;
+            color: blue;
+        }
+
+        .left-side {
+            float: left;
+            width: 20%;
+            color: blue;
+        }
+
+        .body-left {
+            display: block;
+            float: left;
+            width: 15%;
+            min-height: 740px;
+            background-color: aliceblue;
+        }
+
+        .body-right {
+            float: left;
+            width: 85%;
+            min-height: 740px;
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: gray;">
+            <div class="container container-box">
+                <div class="navbar-header left-side">
+                    <button class="btn" style="background-color: gold; font-weight: bold; font-size: 20px; color: red;">B</button>
+                    <label style="color: blue;">Welcome @name to </label>
+                    @Html.ActionLink("BitBook", "HomePage", "Home", new { authenticationInfo = signupId }, null)
+                </div>
+                <form method="post" id="SearchForm">
+                    <div class="navbar-collapse collapse mid-side" style="">
+                        <ul class="nav navbar-nav">
+                            <li><label for="SearchDetail">Name</label></li>
+                            <li><input type="text" id="SearchDetail" name="SearchDetail" /></li>
+                            <li><input type="submit" id="Search" name="Search" value="Search" /></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="">
+            <div class="body-left">
+                @Html.ActionLink("Logout", "SignUpView", "SignUp", new { }, null)
+            </div>
+            <div class="container body-right">
+                <br />
+                @if (ViewBag.Message != null)
+                {
+
+                    <h3 class='alert alert-danger'>@ViewBag.Message</h3>
+                }
+                <br />
+
+                @if (ViewBag.PersonList != null)
+                {
+                    int i = 0;
+                    <table class="col-lg-6">
+                        @foreach (Person person in persons)
+                        {
+                            i = i + 1;
+                            <tr>
+                                <td>@i</td>                                
+                                <td>@Html.ActionLink(person.Name.ToString(), "ProfileView", "Profile", new { personID = person.ProfileID }, new { @style = "color:#000aaa;" })</td>
+                                <td>@person.Email</td>
+                                <td>@Html.ActionLink("Remove friend", "RemoveFriend", "Profile", new { id = person.ProfileID }, new { @style = "color:#000aaa;" })</td>
+                            </tr>
+                        }
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

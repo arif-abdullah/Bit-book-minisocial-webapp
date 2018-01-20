@@ -1,0 +1,273 @@
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll.config
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.pdb
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Web.Infrastructure.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Owin.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\WebGrease.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.pdb
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.csprojResolveAssemblyReference.cache
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.pdb
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll.config
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.pdb
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Web.Infrastructure.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Owin.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\WebGrease.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.pdb
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.csprojResolveAssemblyReference.cache
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.dll
+E:\Batch 4 ASP.NET\26-01-2017\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.pdb
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll.config
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.pdb
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Owin.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\WebGrease.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.pdb
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.pdb
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll.config
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.pdb
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Web.Infrastructure.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Owin.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\WebGrease.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.pdb
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.dll
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.pdb
+E:\Batch 4 ASP.NET\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll.config
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\BitBookWebApplication.pdb
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Owin.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\WebGrease.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Newtonsoft.Json.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Helpers.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Mvc.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Optimization.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.Razor.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Antlr3.Runtime.pdb
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.dll
+C:\Users\Mahmudur\Desktop\Project Two - BitBook\BitBookWebApplication\BitBookWebApplication\BitBookWebApplication\obj\Debug\BitBookWebApplication.pdb
